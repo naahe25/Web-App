@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form and Table with Tailwind</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow">
+    <h1 class="text-2xl font-bold mb-4">User Form</h1>
+    
+    <!-- Form -->
+    <form id="userForm" class="space-y-4">
+      <input type="text" id="name" placeholder="Name" class="w-full border p-2 rounded" required />
+      <input type="email" id="email" placeholder="Email" class="w-full border p-2 rounded" required />
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+    </form>
+
+    <!-- Table -->
+    <h2 class="text-xl font-semibold mt-8 mb-2">User Table</h2>
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead>
+        <tr>
+          <th class="border px-4 py-2">#</th>
+          <th class="border px-4 py-2">Name</th>
+          <th class="border px-4 py-2">Email</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Rows will be added here -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
